@@ -1,3 +1,5 @@
+import fanyi from 'fanyi'
+
 export = (Utils) => {
   return {
     hook_repl_command: new Utils.Hook('semo', () => {
@@ -13,7 +15,7 @@ export = (Utils) => {
               // @ts-ignore
               this.clearBufferedCommand()
 
-              Utils.exec(`npx fanyi ${words}`)
+              fanyi(words)
              
               // @ts-ignore
               this.displayPrompt()
