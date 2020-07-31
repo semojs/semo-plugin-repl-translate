@@ -14,6 +14,6 @@ semo -r --hook
 
 This semo plugin use `fanyi` npm package to fetch translated output.
 
-## License
+## Licence
 
 MIT
